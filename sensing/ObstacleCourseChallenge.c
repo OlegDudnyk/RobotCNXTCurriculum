@@ -27,9 +27,9 @@ void TurnRight() {
 }
 
 void Forward(int time) {
-		motor[motorB] = 100;
-		motor[motorC] = 100;
-		wait1Msec(time);
+	motor[motorB] = 100;
+	motor[motorC] = 100;
+	wait1Msec(time);
 }
 
 void FollowTheBlackLineUntilSonarLessThan(int distance) {
@@ -57,9 +57,9 @@ task main() {
 	GoUntilTouch();
 	TurnLeft();
 	Forward(2500);
-  FollowTheBlackLineUntilSonarLessThan(40);
-  ForwardRightUntilBlackLine();
-  Forward(300);
-  ForwardRightUntilBlackLine();
-  Forward(10000);
+	FollowTheBlackLineUntilSonarLessThan(40);
+	ForwardRightUntilBlackLine();
+	Forward(300);
+	ForwardRightUntilBlackLine();
+	Forward(11000);
 }
