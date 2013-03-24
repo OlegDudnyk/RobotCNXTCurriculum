@@ -61,5 +61,5 @@ task main() {
 	ForwardRightUntilBlackLine();
 	Forward(300);
 	ForwardRightUntilBlackLine();
-	Forward(11000);
+	Forward(10000);
 }
